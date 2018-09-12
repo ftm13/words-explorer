@@ -1,6 +1,5 @@
 # Setting up the python development
 1. Create a new venv <br />
-flmiron@MININT-5QD0CBB MINGW64 ~/source/tutorials/py-flask/py-words-service (master)
 py -3 -m venv venv
 
 2. Source the new env <br />
@@ -11,8 +10,7 @@ pip install -r requirements.txt <br />
 
 4. Run flask <br />
 cd src <br />
-export FLASK_APP=hello.py <br />
-python -m flask run <br />
+python hello.py <br />
 
 5. You should see: <br />
     * Serving Flask app "hello.py"
@@ -25,7 +23,7 @@ python -m flask run <br />
 # For changes to the mysql db:
 Run a mysql instance called mysql1 with root password set to fun <br />
 
-docker run --name=mysql1  -e MYSQL_ROOT_PASSWORD=fun -e MYSQL_ROOT_HOST=% -p 3306:3306 -d mysql/mysql-server:latest
+docker run --name=mysql1  -e MYSQL_ROOT_PASSWORD=<insert-pswd> -e MYSQL_ROOT_HOST=% -p 3306:3306 -d mysql/mysql-server:8
 
 docker logs mysql1
 
