@@ -1,4 +1,5 @@
-# Setting up the python development
+# For local development
+<h1> Setup python venv and install deps. Steps 1 and 3 are on subsequent runs. </h1>
 1. Create a new venv <br />
 py -3 -m venv venv
 
@@ -20,7 +21,7 @@ python hello.py <br />
     * Debug mode: off
     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-# For changes to the mysql db:
+<h1> Create a mysql db container:TODO explain how to do this locally</h1>
 Run a mysql instance called mysql1 with root password set to fun <br />
 
 docker run --name=mysql1  -e MYSQL_ROOT_PASSWORD=<insert-pswd> -e MYSQL_ROOT_HOST=% -p 3306:3306 -d mysql/mysql-server:8
