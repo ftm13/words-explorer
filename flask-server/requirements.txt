@@ -1,0 +1,7 @@
+flask
+flask_cors
+peewee==2.10.1
+PyMySQL
+pynlpir
+tinydb
+zhon==0.2.0
